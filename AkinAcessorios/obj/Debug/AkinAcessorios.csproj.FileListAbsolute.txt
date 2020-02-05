@@ -1,0 +1,12 @@
+c:\users\educafro\documents\visual studio 2015\Projects\AkinAcessorios\AkinAcessorios\bin\Debug\AkinAcessorios.exe.config
+c:\users\educafro\documents\visual studio 2015\Projects\AkinAcessorios\AkinAcessorios\bin\Debug\AkinAcessorios.exe
+c:\users\educafro\documents\visual studio 2015\Projects\AkinAcessorios\AkinAcessorios\bin\Debug\AkinAcessorios.pdb
+c:\users\educafro\documents\visual studio 2015\Projects\AkinAcessorios\AkinAcessorios\obj\Debug\AkinAcessorios.csprojResolveAssemblyReference.cache
+c:\users\educafro\documents\visual studio 2015\Projects\AkinAcessorios\AkinAcessorios\obj\Debug\AkinAcessorios.exe
+c:\users\educafro\documents\visual studio 2015\Projects\AkinAcessorios\AkinAcessorios\obj\Debug\AkinAcessorios.pdb
+C:\Users\EDUCAFRO\Documents\AkinAcessorios\AkinAcessorios\bin\Debug\AkinAcessorios.exe.config
+C:\Users\EDUCAFRO\Documents\AkinAcessorios\AkinAcessorios\obj\Debug\AkinAcessorios.exe
+C:\Users\EDUCAFRO\Documents\AkinAcessorios\AkinAcessorios\obj\Debug\AkinAcessorios.pdb
+C:\Users\EDUCAFRO\Documents\AkinAcessorios\AkinAcessorios\bin\Debug\AkinAcessorios.exe
+C:\Users\EDUCAFRO\Documents\AkinAcessorios\AkinAcessorios\bin\Debug\AkinAcessorios.pdb
+C:\Users\EDUCAFRO\Documents\AkinAcessorios\AkinAcessorios\obj\Debug\AkinAcessorios.csprojResolveAssemblyReference.cache

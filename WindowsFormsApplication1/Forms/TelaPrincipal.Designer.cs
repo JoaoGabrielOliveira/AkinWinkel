@@ -34,7 +34,6 @@
             this.lbl_quantidade = new System.Windows.Forms.Label();
             this.txt_ProdNome = new System.Windows.Forms.TextBox();
             this.txt_ProdPreco = new System.Windows.Forms.TextBox();
-            this.txt_nome = new System.Windows.Forms.TextBox();
             this.lbl_nome = new System.Windows.Forms.Label();
             this.btn_iniciar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -65,7 +64,7 @@
             this.btn_addProd.FlatAppearance.BorderSize = 2;
             this.btn_addProd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_addProd.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addProd.Location = new System.Drawing.Point(114, 269);
+            this.btn_addProd.Location = new System.Drawing.Point(115, 287);
             this.btn_addProd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_addProd.Name = "btn_addProd";
             this.btn_addProd.Size = new System.Drawing.Size(149, 38);
@@ -119,10 +118,10 @@
             // 
             this.lbl_quantidade.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.lbl_quantidade.AutoSize = true;
-            this.lbl_quantidade.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_quantidade.Location = new System.Drawing.Point(44, 174);
+            this.lbl_quantidade.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_quantidade.Location = new System.Drawing.Point(43, 201);
             this.lbl_quantidade.Name = "lbl_quantidade";
-            this.lbl_quantidade.Size = new System.Drawing.Size(162, 16);
+            this.lbl_quantidade.Size = new System.Drawing.Size(190, 19);
             this.lbl_quantidade.TabIndex = 4;
             this.lbl_quantidade.Text = "Digite quantos quer comprar:";
             // 
@@ -134,7 +133,7 @@
             this.txt_ProdNome.Enabled = false;
             this.txt_ProdNome.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ProdNome.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_ProdNome.Location = new System.Drawing.Point(47, 26);
+            this.txt_ProdNome.Location = new System.Drawing.Point(47, 55);
             this.txt_ProdNome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ProdNome.MaxLength = 300;
             this.txt_ProdNome.Name = "txt_ProdNome";
@@ -151,7 +150,7 @@
             this.txt_ProdPreco.Enabled = false;
             this.txt_ProdPreco.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ProdPreco.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txt_ProdPreco.Location = new System.Drawing.Point(47, 82);
+            this.txt_ProdPreco.Location = new System.Drawing.Point(47, 111);
             this.txt_ProdPreco.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_ProdPreco.MaxLength = 300;
             this.txt_ProdPreco.Name = "txt_ProdPreco";
@@ -159,24 +158,13 @@
             this.txt_ProdPreco.Size = new System.Drawing.Size(264, 35);
             this.txt_ProdPreco.TabIndex = 7;
             // 
-            // txt_nome
-            // 
-            this.txt_nome.BackColor = System.Drawing.Color.LightYellow;
-            this.txt_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_nome.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nome.Location = new System.Drawing.Point(16, 47);
-            this.txt_nome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txt_nome.Name = "txt_nome";
-            this.txt_nome.Size = new System.Drawing.Size(236, 22);
-            this.txt_nome.TabIndex = 8;
-            // 
             // lbl_nome
             // 
             this.lbl_nome.AutoSize = true;
-            this.lbl_nome.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nome.Location = new System.Drawing.Point(15, 24);
+            this.lbl_nome.Font = new System.Drawing.Font("Lucida Sans", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nome.Location = new System.Drawing.Point(18, 35);
             this.lbl_nome.Name = "lbl_nome";
-            this.lbl_nome.Size = new System.Drawing.Size(144, 19);
+            this.lbl_nome.Size = new System.Drawing.Size(235, 24);
             this.lbl_nome.TabIndex = 9;
             this.lbl_nome.Text = "Nome do Comprador:";
             // 
@@ -214,8 +202,8 @@
             this.txt_Quantidade.BackColor = System.Drawing.Color.LightYellow;
             this.txt_Quantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Quantidade.Enabled = false;
-            this.txt_Quantidade.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Quantidade.Location = new System.Drawing.Point(47, 194);
+            this.txt_Quantidade.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Quantidade.Location = new System.Drawing.Point(47, 224);
             this.txt_Quantidade.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_Quantidade.Maximum = new decimal(new int[] {
             200,
@@ -223,7 +211,7 @@
             0,
             0});
             this.txt_Quantidade.Name = "txt_Quantidade";
-            this.txt_Quantidade.Size = new System.Drawing.Size(265, 22);
+            this.txt_Quantidade.Size = new System.Drawing.Size(265, 25);
             this.txt_Quantidade.TabIndex = 13;
             // 
             // Tabela_do_Carrinho
@@ -309,8 +297,8 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
             this.panel3.Controls.Add(this.btn_iniciar);
-            this.panel3.Controls.Add(this.txt_nome);
             this.panel3.Controls.Add(this.lbl_nome);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Yi Baiti", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(22, 14);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(785, 89);
@@ -371,7 +359,6 @@
         private System.Windows.Forms.Label lbl_quantidade;
         private System.Windows.Forms.TextBox txt_ProdNome;
         private System.Windows.Forms.TextBox txt_ProdPreco;
-        private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.Label lbl_nome;
         private System.Windows.Forms.Button btn_iniciar;
         private System.Windows.Forms.Label label1;

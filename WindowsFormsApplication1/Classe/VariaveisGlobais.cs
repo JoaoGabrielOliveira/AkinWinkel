@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data;
+using MySql.Data;
+using System.Data.Common;
 using System.Drawing;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +12,10 @@ namespace WindowsFormsApplication1
 {
     public class VariaveisGlobais
     {
-        public static string NomeUsuario = " Desconhecido ";
+        public static string[,] NomeUsuarios = new string[11,11];
+
+
+        public static string NomeUsuario;
 
         public static uint[]    ProdutosEstoque  = new uint[11];
         public static string[]  ProdutosNome     = new string[11];
@@ -82,6 +87,12 @@ namespace WindowsFormsApplication1
             ProdutosNome[10] = "Pulseira";
         }
 
+        public static void CadastrarContas()
+        {
+            NomeUsuarios[1,0] = "joao@gmail.com";
+            NomeUsuarios[1, 1] = "12345678";
+        }
+
         public static DataTable CriarTabela()
         {
             DataTable dbTabela = new DataTable();
@@ -122,5 +133,20 @@ namespace WindowsFormsApplication1
 
             return dbProdutos;
         }
+
+        public static bool Login(string email, string senha)
+        {
+            for (int i = 0; i < 11; i++)
+            {
+                if (VariaveisGlobais.NomeUsuarios[i,0] == email && VariaveisGlobais.NomeUsuarios[i,1] == senha)
+                {
+                    NomeUsuario = NomeUsuarios[i, 0];
+                    return true;
+                }
+            }
+            
+            return false;
+        }
     }
+
 }

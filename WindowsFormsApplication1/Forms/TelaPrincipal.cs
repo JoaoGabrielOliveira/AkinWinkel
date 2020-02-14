@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
             VariaveisGlobais.CadastrarProdutos();
+            lbl_nome.Text = "Comprador: " + VariaveisGlobais.NomeUsuario;
         }
 
         public void Atualizar()
@@ -31,8 +32,6 @@ namespace WindowsFormsApplication1
             Tabela_do_Carrinho.DataSource   = VariaveisGlobais.CriarCarrinho();
             txt_total.Text = "Total: " + VariaveisGlobais.CarrinhoTotal.ToString("C");
         }
-
-        
 
         private void btn_addProd_Click(object sender, EventArgs e)
         {
@@ -70,10 +69,6 @@ namespace WindowsFormsApplication1
 
         private void btn_iniciar_Click(object sender, EventArgs e)
         {
-            //Microsoft.VisualBasic.Interaction.InputBox("Question?", "Title", "Default Text");
-            if (txt_nome.Text != string.Empty)
-            {
-                VariaveisGlobais.NomeUsuario = txt_nome.Text;
                 Atualizar();
 
                 Tabelas_dos_Produtos.Enabled = true;
@@ -85,19 +80,12 @@ namespace WindowsFormsApplication1
                          btn_addProd.Enabled = true;
                        btn_finalizar.Enabled = true;
                 
-
                 btn_iniciar.Enabled = false;
-            }
-
-            else
-            {
-                MessageBox.Show("Digite seu NOME para iniciar as compras");
-            }
         }
 
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
-            VariaveisGlobais.RegistroCompra ="      Nome do Comprador:" + VariaveisGlobais.NomeUsuario;
+            VariaveisGlobais.RegistroCompra ="  Nome do Comprador:" + VariaveisGlobais.NomeUsuario;
 
             for (int i = 1; i < 11; i++)
             {
@@ -115,7 +103,7 @@ namespace WindowsFormsApplication1
                                                                                         
                     else                                                                
                     {                                                                   
-                        VariaveisGlobais.RegistroCompra += string.Format("\nCOD: {0} | NOME: {1} | PREÇO: {2} | QTDE: {3} | SUBTOTAL: {4}", VariaveisGlobais.ProdutosCodigo[i], VariaveisGlobais.ProdutosNome[i], VariaveisGlobais.ProdutosPreco[i].ToString("C"), VariaveisGlobais.ProdutosAuxiliar[i], (VariaveisGlobais.ProdutosPreco[i] * VariaveisGlobais.ProdutosAuxiliar[i]).ToString("C"));
+                        VariaveisGlobais.RegistroCompra += string.Format("\nCOD: {0}  | NOME: {1} | PREÇO: {2} | QTDE: {3} | SUBTOTAL: {4}", VariaveisGlobais.ProdutosCodigo[i], VariaveisGlobais.ProdutosNome[i], VariaveisGlobais.ProdutosPreco[i].ToString("C"), VariaveisGlobais.ProdutosAuxiliar[i], (VariaveisGlobais.ProdutosPreco[i] * VariaveisGlobais.ProdutosAuxiliar[i]).ToString("C"));
                     }
                 }
             }
@@ -148,8 +136,7 @@ namespace WindowsFormsApplication1
 
         private void Tabela_do_Carrinho_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            CodigoCarrinho = Tabela_do_Carrinho.Rows[e.RowIndex].Cells[0].Value.ToString();
-            MessageBox.Show(CodigoCarrinho);
+            CodigoCarrinho = Tabela_do_Carrinho.Rows[e.RowIndex].Cells[0].Value.ToString();            
             this.btn_remCarrinho.Enabled = true;
         }
 

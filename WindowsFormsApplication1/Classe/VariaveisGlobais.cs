@@ -16,6 +16,8 @@ namespace WindowsFormsApplication1
 
 
         public static string NomeUsuario;
+        public static string EmailUsuario;
+        public static string FotoUsuario = "";
 
         public static uint[]    ProdutosEstoque  = new uint[11];
         public static string[]  ProdutosNome     = new string[11];

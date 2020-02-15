@@ -19,7 +19,7 @@ CREATE TABLE Compras (
     Email_Usuario VARCHAR(80) NOT NULL
   )
 
-  SELECT * FROM Contas;
+  SELECT * FROM Contas where tipoConta='user';
 
   SELECT * FROM Compras;
   SELECT * FROM Produtos;
@@ -28,4 +28,4 @@ CREATE TABLE Compras (
   INSERT INTO Contas (email, nome, senha, tipoConta) VALUES ('joao@gmail.com','João','1234', 'admi'), ('mrswlady@outlook.com','Vladmir','1234','admi'), ('edu.dovale@gmail.com','Eduardo do Vale','1234','admi');
   INSERT INTO Contas (email, nome, senha, tipoConta) VALUES ('jojo@gmail.com','Jonathan','1234','user')
 
-  INSERT INTO Produtos VALUES ('Brinco',	10.00	,	10);
+  INSERT INTO Contas (email, nome, senha, tipoConta)
